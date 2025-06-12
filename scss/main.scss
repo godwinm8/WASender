@@ -89,11 +89,11 @@ body {
 .btn-secondary {
   background-color: rgb(246, 246, 246);
   color: $primary-green;
-  border: 1px solid #eaeaea; // Subtle border from design
-  border-radius: 6px; // Match the green button's radius
-  padding: 0.5rem 1rem; // Match the green button's padding
-  font-size: 0.9rem; // Match the green button's font size
-  font-weight: 600; // Match the green button's font weight
+  border: 1px solid #eaeaea; 
+  border-radius: 6px; 
+  padding: 0.5rem 1rem; 
+  font-size: 0.9rem; 
+  font-weight: 600; 
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 
