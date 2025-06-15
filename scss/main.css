@@ -1,3 +1,34 @@
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-start-trial {
+  background-color: #019f53;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(1, 159, 83, 0.25);
+}
+.btn-start-trial:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(1, 159, 83, 0.4);
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #019f53;
+  border-color: #eaeaea;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  border-color: #ddd;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #f8f8f8;
@@ -26,13 +57,26 @@ body {
   color: #777a79 !important;
   font-weight: 500;
   font-size: 0.95rem;
-  margin: 0 0.3rem;
+  margin: 0 0.5rem;
   padding: 0.5rem 0.75rem !important;
   position: relative;
   transition: color 0.3s ease;
 }
 .nav-link.active, .nav-link:hover {
   color: #1d2220 !important;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #019f53;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .btn-start-trial {
@@ -150,7 +194,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(240, 240, 240);
   border-radius: 6px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   flex-shrink: 0;
@@ -271,7 +315,7 @@ body {
 }
 .logo-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 .logo-item:hover img {
   filter: grayscale(0%);
@@ -354,7 +398,7 @@ body {
   align-items: center;
   gap: 8px;
   background-color: #ffffff;
-  border: 1px solid #f0f0f0;
+  border: 2px solid #f0f0f0;
   border-radius: 8px;
   padding: 8px 14px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -420,7 +464,8 @@ body {
 }
 .power-pack-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.01);
+  border-color: #019f53;
 }
 
 .power-pack-card.card-wide {
@@ -481,8 +526,8 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background-color: #f8f8f8;
-  border: 1px solid #f0f0f0;
+  background-color: #ffffff;
+  border: 2px solid #f0f0f0;
   border-radius: 8px;
   padding: 8px 14px;
   font-size: 14px;
@@ -524,6 +569,13 @@ body {
   font-size: 16px;
   color: #1d2220;
   font-weight: 500;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 4px -12px;
+}
+.differentiator-section .feature-checklist li:hover {
+  background-color: rgb(54, 175, 90);
 }
 .differentiator-section .checklist-icon {
   width: 20px;
